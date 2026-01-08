@@ -6,124 +6,223 @@
     <title>Document</title>
 </head>
 <style>
-    #tb1{
-        width: 100%;
-      
-        border-collapse: collapse;
-        
+    img{
+        float: left;
     }
+    h1{
+        text-align:  right;
+        text-transform: uppercase;
+        font-size: 1.6em;
+        color: rgb(59, 112, 112);
+        font-family: 'Courier New', Courier, monospace;
+    }
+    hr{
+        float: left;
+    }
+    #ew{
+        float: ;
+    }
+#tb1 {
+    width: 100%;
+    margin-bottom: 25px;   
+}
+
+#tb1 tr th:last-child {
+    text-align: right;
     
-    #tb1 td:last-child{
-        
-        text-align:right
-    }
-    #tb2{
-        width: 100%;
-        border: 1px solid black;
-         border-collapse: collapse;
-        
-    }
-    #tb2 th{
-        border: 1px solid black;
-         background-color: darkcyan;
-         color: white;
-    }
-    #tb2 td{
-        border: 1px solid black;
-        height: 25px; 
-    }
-#tb2 td.rm{
-    border-bottom: 1px solid white;
+}
+#tb1 tr th:first-child{
+    text-align: left;
+}
+#tb1 tr td:last-child{
+    text-align: right;
+}
+#tb2{
+    width: 100%;
+    border: 1px solid black;
+    border-collapse: collapse;
+    text-align: center;
+
+}
+#tb2 th{
+    border: 1px solid black;
+    background-color:aqua;
+}
+#tb2 td{
+    border: 1px solid black;
+}
+#tb2 tr td:nth-child(2) {
+    text-align: left;
+    padding-left: 10px;
+}
+#tb2 tr:nth-child(odd) {
+    background-color: bisque;
+}
+#tb3 {
+    width: 100%;
+    text-align: right;
+}
+#tb3 td{width: 60px;
+}
+#tb4{
+    width: 100%;
+    text-align: right;
+}
+#tb4 td{
+   width: 200px;
+  
+
+    
+}
+#tb4 tr td:first-child{
+    text-align: left;
+   background-color: aquamarine;
+}
+#tb4 tr td:last-child{
+     background-color: aquamarine;
+     
+}
+
+}
 }
 </style>
 <body>
+    <div>
+        <img src="./image/android-chrome-192x192.png" alt="photo" height="50">
+    </div>
+    <h1>
+        Ali Reza 
+    </h1>
+    <hr style="width: 10%;border: 2px solid blue;">
+    <hr id="ew" style="width: 70%;">
+    <span>Fanaven.com</span>
     <table id="tb1">
-        <tr>
-            <td>Paper Mill, SC 24437</td>
-            <td></td>
-            <td>period: janwary 1-janwary 6,2026</td>
-        </tr>
-        <tr>
-            <td>(555)55550129</td>
-            <td></td>
-            <td>Due: Janwary 6,2026</td>
-            <tr>
-                <td></td>
-                <td></td>
-                <td>payment Via: Debit Card (VISA)</td>
-            </tr>
-             <tr>
-                <td></td>
-                <td></td>
-                <td>ending ****1234</td>
-            </tr>
-        </tr>
-        <tr></tr>
-        <tr></tr>
-        <tr></tr>
-        <tr></tr>
-    </table>
     <br>
     <br>
-    <table id="tb2">
-<tr>
-    <th>Services</th>
-    <th>Date</th>
-    <th>Quality</th>
-    <th>Rate</th>
-    <th>Total</th>
-</tr>
-<tr>
-    <td rowspan="4">Copies</td>
-    <td class="rm">October4</td>
-    <td class="rm">1004</td>
-    <td class="rm">$0.9</td>
-    <td class="rm">$95</td>
-</tr>
-<tr>
-    
-    <td class="rm">janwary</td>
-    <td class="rm">1045</td>
-    <td class="rm"></td>
-    <td class="rm">$95</td>
-</tr>
-<tr>
-    
-    <td class="rm">Jowly</td>
-    <td class="rm">5788</td>
-    <td class="rm"></td>
-    <td class="rm">$98</td>
-</tr>
-<tr>
-   
-   <td>October11</td>
-   <td>234</td>
-   <td></td>
-   <td>$775</td>
-    
 
-</tr>
-<tr>
-    <td>Poster</td>
-    <td>October14</td>
-    <td>14</td>
-    <td></td>
-    <td>$75</td>
-</tr>
-<tr>
-    <td>Presentation </td>
-    <td>October3</td>
-    <td>24</td>
-    <td></td>
-    <td>$65</td>
-</tr>
-<tr>
-    <td></td>
-     <td></td>
-      <td></td>
-       <td></td>
-        <td></td>
-</tr>
+        <tr>
+            <td>Invoice to:</td>
+            <th>Invoice no:123</th>
+        </tr>
+        <tr>
+            <th>Fanaven</th>
+            <td>7janwary 2026</td>
+        </tr>
+        <tr><td>123-134-234</td>
+        <td></td></tr>
+        <tr><td>hello@gmail.com</td>
+        <td></td></tr>
+        <tr><td>124 Anonymouse.city</td>
+        <td></td></tr>
     </table>
+    <table id="tb2">
+        <th>NO</th>
+        <th>DESCREPTION</th>
+        <TH>QTY</TH>
+        <TH>PRICE</TH>
+        <TH>TOTAL</TH>
+        <tr>
+            <td>1</td>
+            <td>Logo Disgin</td>
+            <td>3</td>
+            <td>$144</td>
+            <td>$787</td>
+        </tr>
+         <tr>
+            <td>2</td>
+            <td>Wibside Disgin</td>
+            <td>5</td>
+            <td>$244</td>
+            <td>$757</td>
+        </tr>
+         <tr>
+            <td>3</td>
+            <td>Brand Disgin</td>
+            <td>7</td>
+            <td>$235</td>
+            <td>$877</td>
+        </tr>
+         <tr>
+            <td>4</td>
+            <td>Banner Disgin</td>
+            <td>8</td>
+            <td>$377</td>
+            <td>$374</td>
+        </tr>
+         <tr>
+            <td>5</td>
+            <td>Fliyer Disgin</td>
+            <td>7</td>
+            <td>$344</td>
+            <td>$987</td>
+        </tr>
+         <tr>
+            <td>6</td>
+            <td>Social Midia</td>
+            <td>9</td>
+            <td>$544</td>
+            <td>$987</td>
+        </tr>
+         <tr>
+            <td>7</td>
+            <td>Name Card</td>
+            <td>3</td>
+            <td>$344</td>
+            <td>$587</td>
+        </tr>
+         <tr>
+            <td>8</td>
+            <td>wib developer</td>
+            <td>3</td>
+            <td>$144</td>
+            <td>$787</td>
+        </tr>     
+    </table>
+    <br>
+    <table id="tb3">
+         <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>Sub Total</td>
+            <td>$7.7789</td>
+        </tr>
+       <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>Tax 14%</td>
+            <td>$7.79</td>
+        </tr>
+        
+    </table>
+    <table id="tb4">
+        <tr>
+            <td>PAYMMENT</td>
+               <td></td>
+                  <td></td>
+                     <td style="background-color: aquamarine;">GRAND TOTAL:</td>
+                        <td>$4.743</td> 
+        </tr>
+       
+    </table>
+    <table id="tb5">
+        <td>Bank Name: Borceilie</td>
+          <td></td>
+            <td></td>
+              <td></td>
+                <td></td>
+                <br>
+        <tr>
+             <td>
+                Acound Number:124-323-2577
+             </td>
+          <td></td>
+            <td></td>
+              <td></td>
+                <td></td>
+        </tr>
+      </table>
+  <hr style="border-bottom: 1px solid;">
 </body>
 </html>
