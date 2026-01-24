@@ -1,0 +1,11 @@
+lesson 21 = symbol.
+
+some symbol that you csn make by code:
+ => &#8707; = this code is called "for all" - so you can type like this
+as well: &forall:
+=> &8706;/&part; = this code is called "partshile diffrenshile"
+=> &#8707;/&exist; = this code is called "exist".
+=>  &empty;/ &#8709; = this code is called "empty"
+=>
+
+

@@ -1,0 +1,32 @@
+Lesson 1
+
+for adding color we hane three ways: 1- inline, 2- internal, 3- external.
+inline: need to define style inside a open tag = inline is the priroty
+internal: need to define style tag inside head tag 
+external: need to create an external file and link to html file
+
+we have sixs way to add color to our code they are: 1- name 2- rgb 3- rgba 4- bal 5- bsla 6- hexadecimal 
+=> rgb is sourced from = red 0-255, green 0-255, blue 0-255 = 255*255*255= 16M = means we can add 16M color by "rgb"
+some colors in number = (0,0,0) it means balck. (255,255,255) it means white. (0,255,255) it means red. (0,255,0) it means green 
+=> rgba: a = alpha 0,1- 0,2- 0,3-....0,9 1
+=> hsl:(hue, saturation, lightness) = and its mostly work with % 
+=> hexdecimal: 16= 0-9 a-f it means = -
+0
+.
+.
+.
+.
+9
+a=10 
+b=11
+c=12  = computer can't understand more then 9, it just know 10 like zero, =one, thus we use alphabit 
+d=13
+e=14
+f=15
+for writing in this method first type '#' add six latter
+==============================================================================================================================================
+lesson 3
+
+if you write  div.bo1*3 any where it three div tag with thier class will create 
+if you type like this: div.bo1>h1*3 = it means you put for them child h1 here can be child.
+But if you type like this: div.box1*3>h1 = there will create three div with three three class and child. 
