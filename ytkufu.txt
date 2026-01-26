@@ -29,4 +29,17 @@ lesson 3
 
 if you write  div.bo1*3 any where it three div tag with thier class will create 
 if you type like this: div.bo1>h1*3 = it means you put for them child h1 here can be child.
-But if you type like this: div.box1*3>h1 = there will create three div with three three class and child. 
+But if you type like this: div.box1*3>h1 = there will create three div with three three class and child.
+===============================================================================================================================================
+lesson 4
+
+if in the margin yuo type this:    margin: 30px 80px; "the first one 30px = top + buttom " "the second one 80px = right + left"
+=> if you write like this:  margin: 30px 80px 100px 40px; = 30px = top, 80px = right, 100px = buttom, 40px left = so you can ad that to the padding as well
+padding just put internall margin.
+
+=> instad of writing:
+    border-width: 4px;
+    border-style:ridge;
+    border-color: aqua;
+you can type like this as well: border: 5px ridge pink;
+  
