@@ -1,0 +1,14 @@
+span{
+    width: 50%;
+    height: 50%;
+    background-color: aqua;
+}
+table{
+    border: 2px black;
+    background-color: aqua;
+}
+iframe{
+    border: 2px;
+    background-color: aqua;
+    text-align: center;
+}

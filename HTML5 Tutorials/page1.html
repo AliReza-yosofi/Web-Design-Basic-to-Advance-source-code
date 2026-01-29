@@ -1,99 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-<style>
-    img{
-        float: left;
-    }
-h1{
-    text-align: right;
-    text-transform: uppercase;
-    font-size: 2em;
-    color: rgb(15, 8, 149);
-    font-family: 'Cooper';
+    <style>
+        body {
+  margin: 0;
+  height: 100vh;
+  background: #0b1a2b;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-hr{
-    display: inline-block;
-}
-    #tb1 {
-        width: 100%;
-        border: 1px solid black;
-    }
-    #tb1 th {
-        border: 1px solid black;
-    }
-    #tb1 td{
-        border: 1px solid black;
-    }
-    #tb1 tr th:last-child{
-        text-align: right;
-    }
-   #tb1 tr th:first-child{
-    text-align: left; 
-   }
-#tb1 tr th :first-child{
-    text-align: right;
-}
-   #tb1 tr td:last-child{
-    text-align: right;
 
-   }
-    #tb1 tr td:first-child{
-    text-align: left;}
-</style>
+.devices {
+  position: relative;
+  width: 500px;
+  height: 350px;
+}
+.pc {
+    background-color: black;
+  position: absolute;
+  top: -10px;
+  left: 140px;
+  width: 220px;
+  height: 150px;
+  border: 7px solid #ededed;
+  border-radius: 6px;
+
+}
+
+.laptop {
+  background-color:black;
+  position: absolute;
+  bottom: 70px;
+  left: 60px;
+  width: 160px;
+  height: 100px;
+  border: 7px solid #ffffff;
+  border-radius: 6px;
+}
+
+
+.tablet {
+    background-color: black;
+  position: absolute;
+  bottom: 30px;
+  right: 60px;
+  width: 90px;
+  height: 130px;
+  border: 7px solid #ffffff;
+  border-radius: 10px;
+}
+
+
+.mobile {
+    background-color: black;
+  position: absolute;
+  bottom: 10px;
+  left: 240px;
+  width: 45px;
+  height: 90px;
+  border: 7px solid #ffffff;
+  border-radius: 12px;
+}
+    </style>
+  <meta charset="UTF-8">
+  <title>Responsive Devices</title>
+  <link rel="stylesheet" href="style.css">
 </head>
- <div>
-        <img src="./image\android-chrome-512x512.png" alt="" width="60px" height="60px">
-        <h1>Invoice</h1>
-    </div> 
-    
-    <hr style="width: 10%; border: 2px solid blue;">
-    <hr style="width: 65%;">
-    <span>Fanaven.com</span>
-    
-    <table id="tb1">
-        <tr>
-            <td>Invoice to:</td>
-            <th>Invoice no: 12345  </th>
-        </tr>
-         <tr>
-            <th>Ketu Susilo</th>
-            <td>3 janwary 2025</td>
-         </tr>
-          <tr>
-            <td>123456</td>
-            <td></td>
-          </tr>
-           <tr><td>hello@example.com </td></tr>
-            <tr>
-                <td>123 Anonymouse. city</td>
-                <td></td>
-            </tr>
-
-    </table>
-
-    <table id="tb2"></table>
-    <tr>
-        <th>No</th>
-        <th>description</th>
-        <th>qty</th>
-        <th>price</th>
-        <th>Total</th>
-    </tr>
-
 <body>
-    <pre></pre>
-   <code>
-   Ali Reza &lt;Yosoi&gt;
-   </code>
 
-Ali Reza &lt;Yosoi&gt;
- <blockquote>
-    he said that he would give as somr another time
- </blockquote>
-   
+<div class="devices">
+  <div class="pc"></div>
+  <div class="laptop"></div><br>
+  <div class="tablet"></div><br>
+  <div class="mobile"></div>
+</div>
+
 </body>
 </html>

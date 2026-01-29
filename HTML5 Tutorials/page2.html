@@ -4,32 +4,45 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        
+    </style>
 </head>
 <body>
-    <canvas id="canvas1" width="300" height="120" style="border: 1px
-    solid black;"></canvas>
-    <script>
-        var c = document.getElementById("canvas1")
-        var ctx = c.getContext("2d");
-        // ctx.moveTo(0,0)
-        // ctx.lineTo(200,100);
-        // ctx.moveTo(0,0)
-        // ctx.lineTo(200,120);
-        // ctx.moveTo(0,0)
-        // ctx.lineTo(200,140);
-        // ctx.moveTo(0,0)
-        // ctx.lineTo(200,80);
-        // ctx.moveTo(0,0)
-        // ctx.lineTo(200,140);
-        // ctx.moveTo(100,200)
-        // ctx.lineTo(0  ,50);
-        // ctx.stroke();
-        
-        ctx.font = "30px Arial";
-        ctx.strokeText("Fanaven Technology",10,70);
+   <form action="" method="post" enctype="multipart/form-data">
+    <div class="box-group">
+        <input type="date" name="date">
+        <input type="time" name="time">
+        <input type="datetime" name="datetime">
+        <input type="month">
+        <input type="week">
+        <input type="tel" pattern="{2} {3}-{4}" placeholder="phone">
+        <input type="file">
+        <input type="number" step="5" min="20" max="50" placeholder="nember">
+        <input type="search" placeholder="search">
+        <input type="submit" placeholder="save" required>
+        </div>
+       <div>
+        <input list="City">
+        <datalist id="City">
+            <option value="kabul">Kabul</option>
+             <option value="Ali">Kabul</option>
+              <option value="Raeza">Kabul</option>
+               <option value="yosofi">Kabul</option>
 
-        ctx.stoke()
-    </script>
-    <hr>
+        </datalist>
+       </div>
+   </form>
+ 
+    <form action="" oninput="x.value=parseInt(a.value)+parseInt(b.value)">
+        <input type="range" id="a" name="a" value="0"> + 100
+        <input type="number" id="b" name="b" value="1"> =
+        <output name="X" for="a b"></output>
+    </form>
+   
+
+
+
+    
 </body>
 </html>
