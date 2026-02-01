@@ -1,0 +1,10 @@
+
+.tv{
+    width: 200px; 
+    height: 200px;
+    background-color: rgb(82, 195, 157);
+    outline: 5px solid ;
+    outline-offset: 2px;
+    border: 3px solid blue;
+    margin: 50px;
+}
