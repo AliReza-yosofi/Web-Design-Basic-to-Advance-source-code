@@ -8,3 +8,33 @@
     border: 3px solid blue;
     margin: 50px;
 }
+
+
+a{
+color: white;
+background-color: black;
+
+}
+a:link{
+color: aqua;
+background-color: bisque;
+}
+a:active {
+    color: yellow;
+    background-color: azure;
+}
+a :hover{
+    color: cadetblue;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ul{
+    list-style-type: none;
+}
+li{
+    display: inline-block;
+    text-transform: capitalize;
+}
