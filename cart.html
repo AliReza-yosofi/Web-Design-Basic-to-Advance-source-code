@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Cart</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- NAVBAR -->
+    <nav class="navbar">
+        <h2 class="logo">Furni.</h2>
+
+        <ul class="menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#">Shop</a></li>
+            <li><a href="about.html">About us</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="#">Contact us</a></li>
+            <li><a href="cart.html">Cart (<span id="cart-count">0</span>)</a></li>
+        </ul>
+    </nav>
+
+    <h1 style="text-align:center; margin-top: 30px;">Your Cart</h1>
+
+    <ul id="cart-list" style="text-align:center; list-style:none;"></ul>
+
+    <h2 id="total" style="text-align:center;"></h2>
+
+    <div style="text-align:center; margin-top:20px;">
+        <button onclick="clearCart()">Clear Cart</button>
+    </div>
+
+    <!-- MAIN JS FILE -->
+    <script src="js/script.js"></script>
+
+    <!-- CART LOGIC -->
+    <script>
+        function updateCartCount() {
+            let cart = JSON.parse(localStorage.getItem("cart")) || [];
+            let countElement = document.getElementById("cart-count");
+
+            if (countElement) {
+                countElement.textContent = cart.length;
+            }
+        }
+
+        function displayCart() {
+            let cart = JSON.parse(localStorage.getItem("cart")) || [];
+            let list = document.getElementById("cart-list");
+            list.innerHTML = "";
+
+            let total = 0;
+
+            cart.forEach((item, index) => {
+                let li = document.createElement("li");
+                li.innerHTML = item.name + " - $" + item.price +
+                    " <button onclick='removeItem(" + index + ")'>❌</button>";
+                list.appendChild(li);
+
+                total += item.price;
+            });
+
+            document.getElementById("total").textContent = "Total: $" + total;
+        }
+
+        function removeItem(index) {
+            let cart = JSON.parse(localStorage.getItem("cart")) || [];
+            cart.splice(index, 1);
+            localStorage.setItem("cart", JSON.stringify(cart));
+            displayCart();
+            updateCartCount();
+        }
+
+        function clearCart() {
+            localStorage.removeItem("cart");
+            displayCart();
+            updateCartCount();
+        }
+
+        // RUN WHEN PAGE LOADS
+        displayCart();
+        updateCartCount();
+
+        function addToCart(name, price) {
+    cart.push({ name: name, price: price });
+    localStorage.setItem("cart", JSON.stringify(cart));
+    updateCartCount();
+    showToast(name + " added to cart");
+}
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Shop</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- NAVBAR -->
+    <nav class="navbar">
+        <h2 class="logo">Furni.</h2>
+
+        <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+
+        <ul class="menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="shop.html">Shop</a></li>
+            <li><a href="about.html">About us</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="contact.html">Contact us</a></li>
+            <li><a href="cart.html">Cart (<span id="cart-count">0</span>)</a></li>
+        </ul>
+    </nav>
+
+    <!-- PAGE TITLE -->
+    <h1 style="text-align:center; margin-top:40px;">Shop</h1>
+
+    <!-- PRODUCTS -->
+    <section class="products">
+
+        <div class="product-container">
+
+            <div class="product">
+                <img src="./img/img-grid-3.jpg">
+                <h3>Chair</h3>
+                <p>$50</p>
+                <button onclick="addToCart('Chair', 50)">Add to Cart</button>
+            </div>
+
+            <div class="product">
+                <img src="./img/product-1.png">
+                <h3>Sofa</h3>
+                <p>$120</p>
+                <button onclick="addToCart('Sofa', 120)">Add to Cart</button>
+            </div>
+
+            <div class="product">
+                <img src="./img/product-1.png">
+                <h3>Table</h3>
+                <p>$80</p>
+                <button onclick="addToCart('Table', 80)">Add to Cart</button>
+            </div>
+
+            <div class="product">
+                <img src="./img/product-2.png">
+                <h3>Modern Chair</h3>
+                <p>$70</p>
+                <button onclick="addToCart('Modern Chair', 70)">Add to Cart</button>
+            </div>
+
+             <div class="product">
+                <img src="./img/product-3.png">
+                <h3>Chair</h3>
+                <p>$50</p>
+                <button onclick="addToCart('Chair', 50)">Add to Cart</button>
+            </div>
+
+            <div class="product">
+                <img src="./img/sofa.png">
+                <h3>Couch</h3>
+                <p>$120</p>
+                <button onclick="addToCart('Sofa', 120)">Add to Cart</button>
+            </div>
+
+            <div class="product">
+                <img src="./img/product-3.png">
+                <h3> modern Table</h3>
+                <p>$80</p>
+                <button onclick="addToCart('Table', 80)">Add to Cart</button>
+            </div>
+
+            <div class="product">
+                <img src="./img/product-1.png">
+                <h3>comfort Chair</h3>
+                <p>$70</p>
+                <button onclick="addToCart('Chair', 50)">Add to Cart</button>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- TOAST -->
+    <div id="toast"></div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

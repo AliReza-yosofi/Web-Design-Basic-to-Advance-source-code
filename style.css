@@ -1,0 +1,342 @@
+body {
+    margin: 0;
+    font-family: Arial;
+}
+
+/* NAVBAR */
+/* NAVBAR */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #2f3e46;
+    padding: 15px 40px;
+}
+
+.logo {
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* MENU */
+.menu {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+}
+
+.menu li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+/* HOVER EFFECT */
+.menu li a:hover {
+    color: #84a98c;
+}
+
+/* ACTIVE LINK (OPTIONAL) */
+.menu li a.active {
+    border-bottom: 2px solid #84a98c;
+}
+/* HERO SECTION */
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 60px;
+    background-color: #354f52;
+    color: white;
+}
+
+.hero-text {
+    max-width: 50%;
+}
+
+.hero-text h1 {
+    font-size: 40px;
+}
+
+.hero-text p {
+    margin: 20px 0;
+}
+
+.btn {
+    background-color: #f4a261;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #e76f51;
+}
+
+.hero-img img {
+    width: 650px;
+}
+
+/* PRODUCTS */
+.products {
+    padding: 50px;
+    text-align: center;
+}
+
+.product-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.product {
+    border: 1px solid #ccc;
+    padding: 20px;
+    width: 200px;
+}
+
+.product img {
+    width: 100%;
+}
+
+.product button {
+    background-color: #2f3e46;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.product button:hover {
+    background-color: #354f52;
+}
+
+
+#cart-list li {
+    margin: 10px 0;
+    font-size: 18px;
+}
+
+#cart-list button {
+    margin-left: 10px;
+    background-color: red;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+/* CART PAGE */
+#cart-list {
+    max-width: 400px;
+    margin: 20px auto;
+    padding: 0;
+}
+
+#cart-list li {
+    background-color: #f1f1f1;
+    padding: 12px;
+    margin: 10px 0;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#total {
+    margin-top: 20px;
+    color: #2f3e46;
+}
+
+button {
+    padding: 8px 12px;
+    border-radius: 5px;
+}
+.product {
+    transition: 0.3s;
+}
+
+.product:hover {
+    transform: scale(1.05);
+}
+button {
+    background-color: #2f3e46;
+    color: white;
+    border: none;
+}
+
+button:hover {
+    background-color: #354f52;
+}
+
+/* TOAST MESSAGE */
+#toast {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #2f3e46;
+    color: white;
+    padding: 15px 20px;
+    border-radius: 8px;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+#toast.show {
+    opacity: 1;
+}
+
+/* MENU TOGGLE BUTTON */
+.menu-toggle {
+    display: none;
+    background: none;
+    color: white;
+    font-size: 24px;
+    border: none;
+    cursor: pointer;
+}
+
+/* MOBILE STYLE */
+@media (max-width: 768px) {
+    .menu {
+        display: none;
+        flex-direction: column;
+        background-color: #2f3e46;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        width: 200px;
+        padding: 20px;
+    }
+
+    .menu.show {
+        display: flex;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+}
+
+/* shop page */
+.products {
+    padding: 50px;
+    text-align: center;
+}
+
+.product-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.product {
+    border: 1px solid #ccc;
+    padding: 20px;
+    width: 200px;
+    transition: 0.3s;
+}
+
+.product:hover {
+    transform: scale(1.05);
+}
+
+.product img {
+    width: 100%;
+}
+
+.product button {
+    margin-top: 10px;
+}
+
+.contact-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.contact-container form {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    gap: 15px;
+}
+
+.contact-container input,
+.contact-container textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+
+.contact-container button {
+    background-color: #2f3e46;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.blog-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 40px;
+    flex-wrap: wrap;
+}
+
+.blog-card {
+    width: 250px;
+    border: 1px solid #ccc;
+    padding: 20px;
+    transition: 0.3s;
+}
+
+.blog-card:hover {
+    transform: scale(1.05);
+}
+
+*/ about.css */
+
+.about-section {
+    max-width: 600px;
+    margin: 40px auto;
+    text-align: center;
+    font-size: 18px;
+}
+
+.team {
+    text-align: center;
+    padding: 50px;
+}
+
+.team h2 {
+    margin-bottom: 30px;
+}
+
+.team-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.team-member {
+    width: 200px;
+    text-align: center;
+}
+.team-member img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.team-member h3 {
+    margin-top: 10px;
+}
+
+.team-member p {
+    color: gray;
+}

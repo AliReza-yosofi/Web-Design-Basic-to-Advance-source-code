@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- NAVBAR -->
+    <nav class="navbar">
+        <h2 class="logo">Furni.</h2>
+
+        <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+
+        <ul class="menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="shop.html">Shop</a></li>
+            <li><a href="about.html">About us</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="contact.html">Contact us</a></li>
+            <li><a href="cart.html">Cart (<span id="cart-count">0</span>)</a></li>
+        </ul>
+    </nav>
+
+    <h1 style="text-align:center; margin-top:40px;">Contact Us</h1>
+
+    <!-- CONTACT FORM -->
+    <div class="contact-container">
+        <form onsubmit="submitForm(event)">
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </div>
+
+    <!-- TOAST -->
+    <div id="toast"></div>
+
+    <script src="./script.js"></script>
+
+    <script>
+        function submitForm(event) {
+            event.preventDefault();
+            showToast("Message sent successfully!");
+        }
+    </script>
+
+</body>
+</html>

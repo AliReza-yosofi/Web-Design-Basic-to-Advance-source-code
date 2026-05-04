@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Furni Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- NAVBAR -->
+    <nav class="navbar">
+        <h2 class="logo"> Ali Reza's Furni.</h2>
+        <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+        <ul class="menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="shop.html">Shop</a></li>
+            <li><a href="about.html">About us</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="contact.html">Contact us</a></li>
+            <li><a href="cart.html">Cart (<span id="cart-count">0</span>)</a></li>
+        </ul>
+    </nav>
+
+    <!-- HERO SECTION -->
+    <section class="hero">
+
+        <div class="hero-text">
+            <h1>Modern Interior Design Studio</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <button class="btn" onclick="window.location.href='shop.html'">Shop Now</button>
+
+        </div>
+
+        <div class="hero-img">
+            <img src="./img/couch.png" alt="sofa">
+        </div>
+
+    </section>
+
+    <!-- PRODUCTS SECTION -->
+    <section class="products">
+
+        <h2>Our Products</h2>
+
+        <div class="product-container">
+
+            <div class="product">
+                <img src="./img/product-3.png">
+                <h3>Chair</h3>
+                <p>$50</p>
+               <button onclick="addToCart('Chair', 50)">Add to Cart</button>
+            </div>
+
+            <div class="product">
+                <img src="./img/product-1.png">
+                <h3>Sofa</h3>
+                <p>$120</p>
+              <button onclick="addToCart('Sofa', 120)">Add to Cart</button>
+            </div>
+
+            <div class="product">
+                <img src="./img/product-2.png">
+                <h3>Table</h3>
+                <p>$80</p>
+              <button onclick="addToCart('Table', 80)">Add to Cart</button>
+            </div>
+
+        </div>
+
+    </section>
+
+    <script src="script.js"></script>
+
+    <div id="toast">Added to cart</div>
+
+</body>
+</html>
+
+
